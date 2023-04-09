@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // application level middlewares
-app.use(router);
+app.use("/api", router);
 app.use(ErrorHandling);
 
 //database connection

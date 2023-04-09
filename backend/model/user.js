@@ -17,12 +17,6 @@ const UserSchema = new mongoose.Schema(
     },
   },
   {
-    toJSON: {
-      transform: function (db, obj) {
-        delete obj.__v;
-        return obj;
-      },
-    },
     timestamps: true,
   }
 );

@@ -7,10 +7,10 @@ const GenerateToken = (_id) => {
 
 const VerifyTOken = (token) => {
   const verifyToken = jwt.verify(token, TOKEN_SECRET_KEY);
-  return verifyToken
+  return verifyToken;
 };
 
 module.exports = {
-    GenerateToken,
-    VerifyTOken
-}
+  GenerateToken,
+  VerifyTOken,
+};
